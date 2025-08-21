@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Interface</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/chat.css')}}">
+  <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <div class="app-container">
+    <a href="index.html" class="category-link">
+      <span class="category-icon">&#9776; variants</span>
+    </a>
+    <div class="chat-container">
+      <div class="chat-header">
+        <a href="index.html" class="category-link">
+          <!-- <span class="category-icon">&#9776;</span> -->
+        </a>
+      </div>
+      <div class="chat-messages">
+        <!-- Chat messages will be dynamically added here -->
+      </div>
+      <form method="POST">
+        <div class="input-container">
+          <input type="text" placeholder="Type your prompt..." class="input-field" id="userInput" name="prompt">
+          <button id="sendButton" type="submit">
+            <span class="send-icon">&#9658;</span>
+          </button>
+      
+          {% for i, j in chats %}
+            <script>
+              console.log('{{i, j}}')
+              displayMessage('{{i}}', 'user');
+              userInput.value = '';
+              displayMessage('{{j}}', 'bot');
+            </script>
+          {% endfor %}
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html> 
+
+
