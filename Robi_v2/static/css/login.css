@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    border-bottom: 1px solid #5a5555;
+    margin-top: 0px;
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #599cb6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.or-container {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.or-text {
+    background-color: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.or-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+}
+
+.social-signup {
+    text-align: center;
+}
+
+.social-signup p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 5px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+#signup {
+    color: #000000;
+}
+
+.login-btn:hover {
+    background-color: #1e566d;
+}
