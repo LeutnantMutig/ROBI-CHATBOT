@@ -1,25 +1,27 @@
-# Robi
+# 🤖 Robi_v2
 
-Robi is a Flask-based web application that provides:
-- User authentication (login & signup)
-- A chat interface
-- A modern UI with custom CSS, JavaScript, and templates
+Robi_v2 is a **Flask-powered web application** that combines **user authentication** (login & signup) with a sleek **chat interface**.  
+It comes with a modern frontend built using HTML, CSS, and JavaScript, making it lightweight yet functional.
 
 ---
 
-## 🚀 Features
-- 🔐 User Registration & Login
-- 💬 Chat Interface
-- 🎨 Responsive UI with CSS & Images
-- 🖼️ Pre-built Templates (Login, Signup, Chat, Start Page)
-- ⚡ Lightweight Python backend
+## ✨ Features
+- 🔑 **User Authentication** – Login & Signup system  
+- 💬 **Chat Interface** – Interactive chat page with a clean UI  
+- 🎨 **Modern UI/UX** – Custom CSS, images, and responsive design  
+- ⚡ **Lightweight Backend** – Flask-powered Python server  
+- 📂 **Template-Based Structure** – Easy to customize frontend (HTML + CSS + JS)
 
 ---
-
+```
 ## 📂 Project Structure
-Robi_v2/
-│── APP-2.py # Main Flask app file
-│── static/ # CSS, JS, and images
-│── templates/ # HTML templates
+Robi/
+│── APP-2.py # Main Flask application
+│── static/ # CSS, JavaScript, images
+│ ├── css/ # Stylesheets
+│ ├── js/ # Scripts
+│ └── images/ # Icons & backgrounds
+│── templates/ # HTML templates (login, signup, chat, etc.)
 │── ref/ # Reference images/icons
-│── .idea/ # IDE configs (can be ignored)
+│── .idea/ # IDE configuration (ignore in production)
+```
