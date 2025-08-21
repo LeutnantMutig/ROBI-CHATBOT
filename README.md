@@ -1,6 +1,6 @@
-# 🤖 Robi_v2
+# 🤖 Robi
 
-Robi_v2 is a **Flask-powered web application** that combines **user authentication** (login & signup) with a sleek **chat interface**.  
+Robi is a **Flask-powered web application** that combines **user authentication** (login & signup) with a sleek **chat interface**.  
 It comes with a modern frontend built using HTML, CSS, and JavaScript, making it lightweight yet functional.
 
 ---
